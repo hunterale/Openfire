@@ -85,7 +85,7 @@
 
 <p>
 <fmt:message key="group.delete.hint_info" />
-<b><a href="group-edit.jsp?group=<%= URLEncoder.encode(group.getName(), "UTF-8")%>"><%= group.getName() %></a></b>
+<b><a href="group-edit.jsp?group=<%= URLEncoder.encode(group.getName(), "UTF-8")%>"><%= StringUtils.escapeHTMLTags(group.getName()) %></a></b>
 <fmt:message key="group.delete.hint_info1" />
 </p>
 
